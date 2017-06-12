@@ -1,0 +1,104 @@
+.main {
+	width: 90%;
+	max-width: 76em;
+	margin-top: 3em;
+	margin: 0 auto;
+	padding: 0 1.875em 3.125em 1.875em;
+}
+
+.rb-grid {
+	list-style: none;
+	text-align: center;
+	margin-top: 8em;
+}
+
+.rb-grid li {
+	width: 24%;
+	height: 15em;
+	margin: 0.5%;
+	background: #8CC7DF;
+	color: #fff;
+	display: block;
+	float: left;
+	padding: 1.6em;
+	cursor: pointer;
+	position: relative;
+}
+
+.rb-grid li:hover{
+	-moz-box-shadow: 1px 2px 3px 4px #ccc;
+	-webkit-box-shadow: 1px 2px 3px 4px #ccc;
+	box-shadow: 1px 2px 3px 4px #ccc;
+	-webkit-transition: box-shadow 0.5s ease-in-out 0s;
+	-moz-transition: box-shadow 0.5s ease-in-out 0s;
+	-o-transition: box-shadow 0.5s ease-in-out 0s;
+	-ms-transition: box-shadow 0.5s ease-in-out 0s;
+	transition: box-shadow 0.5s ease-in-out 0s; 
+}
+.rb-grid li.rb-span-2 {
+	width: 49%;
+}
+
+.rb-grid li.rb-span-4 {
+	width: 99%;
+}
+
+.rb-grid li h3 {
+	font-size: 1.6em;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.rb-desc {
+	font-family: 'Open Sans Condensed', sans-serif;
+	display: block;
+	font-size: 1em;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.rb-grid li:hover .rb-desc {
+	opacity: 1;
+}
+
+.rb-grid li:nth-child(1) { background: #3399CC; }
+.rb-grid li:nth-child(2) { background: #33CCCC; }
+.rb-grid li:nth-child(3) { background: #996699; }
+.rb-grid li:nth-child(4) { background: #C24747; }
+.rb-grid li:nth-child(5) { background: #e2674a; }
+.rb-grid li:nth-child(6) { background: #FFCC66; }
+.rb-grid li:nth-child(7) { background: #99CC99; }
+.rb-grid li:nth-child(8) { background: #669999; }
+.rb-grid li:nth-child(9) { background: #CC6699; }
+.rb-grid li:nth-child(10) { background: #339966; }
+
+
+@media screen and (max-width: 63.125em) {
+
+	.rb-grid {
+		margin-top: 1em;
+	}
+	
+	.rb-grid li,
+	.rb-grid li.rb-span-2,
+	.rb-grid li.rb-span-4 {
+		width: 100%;
+		height: 10em;
+		text-align: left;
+	}
+
+	.rb-grid li[class^="icon-"]:before,
+	.rb-grid li[class*=" icon-"]:before {
+		font-size: 6em;
+		left: auto;
+		right: 0;
+		line-height: 2.5;
+	}
+
+	.rb-grid li > div {
+		text-align: center;
+	}
+}

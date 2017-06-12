@@ -18,48 +18,130 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<title>Oi, Pedro !</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" href="mobile.css" type="text/css" media="handheld">
+	<link href="https://fonts.googleapis.com/css?family=Megrim|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Megrim|Raleway" rel="stylesheet">
-	<script type="text/javascript" src="js/main.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  	integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  	crossorigin="anonymous"></script>
+	<title>Oi, Pedro !</title>
 </head>
 <body>
-<div class="main">
-	<div class="side_menu">
-		<div class="logo">
-		<img src="img/logo.png">			
-		</div>
-		<div class="btns">
-			<button onclick="location.href='#home'">Home</button>
-			<button onclick="location.href='#about'">About Me</button>
-			<button onclick="location.href='#jobs'">Meus Trabalhos</button>
-			<button onclick="location.href='#contact'">Contato</button></div>
-		<div class="menu_footer">© Todos os direitos reservados</div>
-	</div>
-	<div class="content">
-		<section id="home" class="home">
 
+	<div class="l-page">
 
-		</section>
-		<section id="about" class="about">
-
+		<div class="l-content">
+			<section id="home" class="home">
+			</section>
+			<section id="about" class="about">
 				<h1>About Me</h1>
+				<p class="joke">Se eu sei que o que estou fazendo ? Pode perguntar a minha mãe</p>
+				<div class="panel">
+					<div class="left-panel">
+						<img class="img" src="img/eu.png">
+						<p>Oi! Sou Pedro, Full-Stack Developer de Campos dos Goytacazes, RJ. Estudante de ciência da computação e quando não estou estudando desenvolvo alguns projetos legais, as vezes sozinho, outras vezes com dois amigos. Desenvolvo primariamente em Python/Django para Back-End e HTML5/CSS3/Javascript para Front-End, mas aprender um linguagem/framework novos, nunca foi nem será problema. Entre em contato e vamos trocar uma ideia :)</p>
 
-		</section>
-		<section id="jobs" class="jobs">
-			<h1>Meus Trabalhos</h1>
-		</section>
-		<section id="contact" class="contact">
+					</div>
+					<div class="right-panel">
+						<h2>O que eu manjo ?</h2>
+						<h3>HTML5 & CSS3</h3>
+						<div class="html progress"></div>
+						<h3>Python</h3>
+						<div class="python progress"></div>
+						<h3>Django</h3>
+						<div class="django progress"></div>
+						<h3>Ruby on Rails</h3>
+						<div class="rails progress"></div>
+						<h3>Docker</h3>
+						<div class="docker progress"></div>
+						<h3>Wordpress</h3>
+						<div class="press progress"></div>
+						<h3>Javascript</h3>
+						<div class="script progress"></div>
+						<p>E aprendendo que ainda há muito para aprender !</p>
+					</div>
+				</div>
+			</section>
+			<section id="jobs" class="jobs">
+				<h1>Meus Trabalhos</h1>
+				<div class="main">
+					<ul id="rb-grid" class="rb-grid">
+						<li>
+							<h3>Nome</h3>
+							<span class="rb-temp">Descrição</span>
+						</li>
+						<li>
+							<h3>Nome</h3>
+							<span class="rb-temp">Descrição</span>
+						</li>
+						<li>
+							<h3>Nome</h3>
+							<span class="rb-temp">Descrição</span>
+						</li>
+						<li>
+							<h3>Nome</h3>
+							<span class="rb-temp">Descrição</span>
+						</li>
+						<li>
+							<h3>Nome</h3>
+							<span class="rb-temp">Descrição</span>
+						</li>
+						<li>
+							<h3>Nome</h3>
+							<span class="rb-temp">Descrição</span>
+						</li>
+						<li>
+							<h3>Nome</h3>
+							<span class="rb-temp">Descrição</span>
+						</li>
 
-				<h1>Contato</h1>
+					</ul>
+				</div>
+			</section>
+			<section id="contact" class="contact">
+				<h1>Contatos</h1>
+				<p class="joke">Manda um oi ?</p>
+				<div class="panel2">
 
-		</section>
-	</div>
-</div>
-</body>
-</html>
+					<form class="form">
+						<input type="text" id="name" name="name" placeholder="Nome" required><br/>
+						<input type="email" id="email" name="email" placeholder="Seu email"required><br/>
+						<textarea id="message" name="message" placeholder="Agora, um texto dissertativo sobre seu lindo projeto :)" required></textarea><br/>
+						<p class="joke">Prometo que não vou mandar spam</p><br>
+						<button>Oi!<img class="icon" src="img/paperplane.png"/></button><br/>
+					</form>
+					<h2>Ou</h3>
+					<div class="social">
+
+							<a href="https://www.facebook.com/perliima" target="_blank"><img src="img/facebook">
+							<span>/perliima</span></a>
+							<a href="https://www.linkedin.com/in/pedrorls" target="_blank">
+							<img src="img/linkedin">
+							<span>/pedrorls</span></a>
+							<a href="https://github.com/pedrorls" target="_blank">
+							<img src="img/github">
+							<span>/pedrorls</span></a>
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+					<div class="l-sidebar">
+						<div class="logo">
+							<img src="img/logo.png">			
+						</div>
+						<div class="btns">
+							<button class='home-btn' onclick="location.href='#home'">Home</button>
+							<button class='about-btn' onclick="location.href='#about'">About Me</button>
+							<button class='jobs-btn' onclick="location.href='#jobs'">Meus Trabalhos</button>
+							<button class='contact-btn' onclick="location.href='#contact'">Contato</button>
+						</div>
+						<div class="menu_footer">© Todos os direitos reservados</div>
+					</div>
+
+				</div>
+
+			</body>
+			</html>
