@@ -198,7 +198,7 @@ body {
 .right-panel > p{
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-align: center;
-	color: #5DBBE2;
+	color: #Megrim;
 }
 
 .right-panel > .progress {
@@ -326,7 +326,9 @@ button:hover, .button:hover {
 .panel2 h2 {
 	font-size: 30px;
     text-decoration: underline;
-    margin-bottom: 2em;
+    text-decoration-color: #4b94de;
+    padding: 1em;
+    font-family: Megrim;
 }
 
 .social {
@@ -448,7 +450,11 @@ button:hover, .button:hover {
 	}
 
 	.jobs {
-		height: 220vh !important;
+		height: 190vh !important;
+	}
+
+	.contact {
+		height: 115vh !important;
 	}
 
 	.panel {
@@ -482,16 +488,14 @@ button:hover, .button:hover {
 		padding: 1em;
 	}
 
-	 form > input, textarea {
-		margin-left: 25px; 
-	}
-
-	form > button {
-		margin-left: 65px;
-		margin-right: 0;
-		float: none;
-	}
-}
+	.form {
+    	width: 100%; 
+    	padding: 0;
+    	margin-left: 0;
+    }
+    .panel2 h2 {
+    	font-size: 15px;
+    }
 
 @media (max-width: 20em){
 	.home {
